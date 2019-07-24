@@ -1,0 +1,83 @@
+﻿@model FlamingoAirwaysApp.Models.Login
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="">
+
+    <div style="
+    margin:10px;
+	padding:10px;
+	background-image:url('../../1.jpg');
+   background-repeat:no-repeat;
+    width:1600px;
+    height:700px;
+	background-position:center;
+    font-family: sans-serif;
+    ">
+        <div>
+            <div class="loginbox">
+
+                @*style="border:5px solid blue;margin-left:180px;margin-top:50px;">*@
+                @*<img src="~/1.jpg" class="a" />*@
+                <center>
+
+                    <form style="border:5px solid blue;margin:200px;width:400px">
+                        @*<fieldset>
+                                            <h1>Login Here</h1>
+                                            @*style="bottom:10px;width: 320px;
+
+                            height: 420px;
+                            background-color:transparent;font-size:30px;*@
+                        @*">*@
+                        <p>Username</p>
+                        <input type="text" name="" placeholder="Enter Username"><br />
+                        <p> Password</p>
+                        <input type="password" name="" placeholder="Enter Password" /><br />
+                        <input type="submit" name="" value="Login"><br />
+                        @*@Html.ActionLink("Lost your password", "ForgetPassword", "SignUp")*@
+                        <a href="a">Lost Your Password?</a><br />
+                        <a href="a">Don't have an account?</a>
+
+                        @*</fieldset>*@
+
+
+                        @*@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.UserID, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.UserID, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Create" class="btn btn-default" />
+                                </div>
+                            </div>*@
+                    </form>
+                </center>
+            </div>
+            @Html.Partial("FlightView")
+        </div>
+    </div>
+</body>
+</html>

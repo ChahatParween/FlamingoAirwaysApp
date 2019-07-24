@@ -1,0 +1,90 @@
+﻿@model FlamingoAirwaysApp.Models.clsFlightBooking
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FlightBooking</title>
+</head>
+<body>
+    <div>
+        <h4>clsFlightBooking</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.FlightNo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.FlightNo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.From)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.From)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.To)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.To)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Departure)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Departure)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Arrival)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Arrival)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Traveller)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Traveller)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TicketNo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TicketNo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TicketDate)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TicketDate)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
